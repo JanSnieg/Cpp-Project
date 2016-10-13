@@ -15,7 +15,8 @@
 - Po danym okresie czasu baza dancyh będzie zapisywała swoje dotychczasowe dane do pliku tekstowego, lub pliku .xls, aby zminimalizować możliwości usunięcia ważnych danych przez użytkownika lub program;
 
 ### Milestones:
-- [ ] Stworzenie i zsynchronizowanie bazy danych;
-- [ ] Stworzenie odpowiednich funkcji na zapis bazy danych do pliku .txt lub .xls;
-- [ ] Oprawa graficzna
+- [ ] Stworzenie i zsynchronizowanie bazy danych (3/17 listopada);
+- [ ] Stworzenie odpowiednich funkcji na zapis bazy danych do pliku .txt lub .xls(około 1 grudnia);
+- [ ] Oprawa graficzna(drugi tydzień grudnia);
 - [ ] *Stworzenie połączenia z serverem oraz przypisanie użytkownikom loginow i haseł (Jeżeli wystarczy czasu);*
+- [ ] Oddanie projektu (między 15.12.16 a 12.01.17);
