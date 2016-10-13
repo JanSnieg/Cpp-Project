@@ -8,7 +8,7 @@
 - Program będzie czymś w stylu kalendarza dla firmy transportowej;
 - Będzie przypominał kiedy *np. kończy się data ważności dokumentów samochodowych, lub kiedy kierowca musi przejść psychotesty*;
 
-### Wygląd i działanie Front-Endu:
+### Wygląd i działanie:
 - Program będzie wyglądał jak najprościej jest to możliwe, aby usprawnić użytkownikowi szybkie działanie;
 - Program, o ile to możliwe, będzie prosty w obsłudze, aby nikt nie miał problemu z niego korzystać;
 - Użytkownik nie będzie musiał się martwić, jak coś działa, albo czy to na pewno się zapisze;
