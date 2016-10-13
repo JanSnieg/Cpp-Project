@@ -12,11 +12,11 @@
 - Program będzie wyglądał jak najprościej jest to możliwe, aby usprawnić użytkownikowi szybkie działanie;
 - Program, o ile to możliwe, będzie prosty w obsłudze, aby nikt nie miał problemu z niego korzystać;
 - Użytkownik nie będzie musiał się martwić, jak coś działa, albo czy to na pewno się zapisze;
-- Po danym okresie czasu baza dancyh będzie zapisywała swoje dotychczasowe dane do pliku tekstowego, lub pliku .xls, aby zminimalizować możliwości usunięcia ważnych danych przez użytkownika lub program;
+- Po danym okresie czasu baza dancyh będzie zapisywała swoje dotychczasowe dane do pliku tekstowego, lub pliku .csv, aby zminimalizować możliwości usunięcia ważnych danych przez użytkownika lub program;
 
 ### Milestones:
 - [ ] Stworzenie i zsynchronizowanie bazy danych (3/17 listopada);
-- [ ] Stworzenie odpowiednich funkcji na zapis bazy danych do pliku .txt lub .xls(około 1 grudnia);
+- [ ] Stworzenie odpowiednich funkcji na zapis bazy danych do pliku .txt lub .csv(około 1 grudnia);
 - [ ] Oprawa graficzna(drugi tydzień grudnia);
 - [ ] *Stworzenie połączenia z serverem oraz przypisanie użytkownikom loginow i haseł (Jeżeli wystarczy czasu);*
 - [ ] Oddanie projektu (między 15.12.16 a 12.01.17);
