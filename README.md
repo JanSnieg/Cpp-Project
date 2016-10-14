@@ -16,7 +16,7 @@
 
 ### Milestones:
 - [ ] Stworzenie i zsynchronizowanie bazy danych (3/17 listopada);
-- [ ] Stworzenie odpowiednich funkcji na zapis bazy danych do pliku .txt lub .csv(około 1 grudnia);
-- [ ] Oprawa graficzna(drugi tydzień grudnia);
+- [ ] Stworzenie odpowiednich funkcji na zapis bazy danych do pliku .txt lub .csv (około 1 grudnia);
+- [ ] Oprawa graficzna, Prototyp (drugi tydzień grudnia);
 - [ ] *Stworzenie połączenia z serverem oraz przypisanie użytkownikom loginow i haseł (Jeżeli wystarczy czasu);*
 - [ ] Oddanie projektu (między 15.12.16 a 12.01.17);
