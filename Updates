@@ -1,5 +1,7 @@
 #Plik dedykowany zmianom w projekcie
+
 ###2016.10.31
+
 Zrezygnowałem jak na początku było z xCode oraz SqLite, w zamian program będzie robiony w Qt Creator oraz na bazie MySql.
 Od dwóch dni siedzie i próbuje zkonfigurować Qt Creatora aby działał MySql, ale sam nie dałem rady.
 Najlesze narzędzie programistyczne, tzn. "Google" również mnie zawiodło.
