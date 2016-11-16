@@ -15,7 +15,7 @@
 - Po danym okresie czasu baza dancyh będzie zapisywała swoje dotychczasowe dane do pliku tekstowego, lub pliku .csv, aby zminimalizować możliwości usunięcia ważnych danych przez użytkownika lub program;
 
 ### Milestones:
-- [ ] Stworzenie i zsynchronizowanie bazy danych (3/17 listopada);
+- [X] Stworzenie i zsynchronizowanie bazy danych (3/17 listopada);
 - [ ] Stworzenie odpowiednich funkcji na zapis bazy danych do pliku .txt lub .csv (około 1 grudnia);
 - [ ] Oprawa graficzna, Prototyp (drugi tydzień grudnia);
 - [ ] *Stworzenie połączenia z serverem oraz przypisanie użytkownikom loginow i haseł (Jeżeli wystarczy czasu);*
