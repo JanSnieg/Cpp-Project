@@ -18,4 +18,4 @@
 - [X] Stworzenie i zsynchronizowanie bazy danych (3/17 listopada);
 - [X] Oprawa graficzna, Prototyp (drugi tydzień grudnia);
 - [ ] *Stworzenie połączenia z serverem oraz przypisanie użytkownikom loginow i haseł (Jeżeli wystarczy czasu);*
-- [ ] Oddanie projektu (między 15.12.16 a 12.01.17);
+- [X] Oddanie projektu (między 15.12.16 a 12.01.17);
