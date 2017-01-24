@@ -19,3 +19,6 @@
 - [X] Oprawa graficzna, Prototyp (drugi tydzień grudnia);
 - [ ] *Stworzenie połączenia z serverem oraz przypisanie użytkownikom loginow i haseł (Jeżeli wystarczy czasu);*
 - [X] Oddanie projektu (między 15.12.16 a 12.01.17);
+
+### Mniej ważne rzeczy:
+- link do dysku google z prezentacją i filmikiem: https://drive.google.com/open?id=0B6QHu5fgHGMeelo4c0pQUUtpdFU
