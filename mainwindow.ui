@@ -6,153 +6,65 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>864</width>
-    <height>566</height>
+    <width>1680</width>
+    <height>1050</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <property name="layoutDirection">
-   <enum>Qt::LeftToRight</enum>
-  </property>
-  <property name="autoFillBackground">
-   <bool>true</bool>
-  </property>
-  <property name="locale">
-   <locale language="Polish" country="Poland"/>
-  </property>
-  <property name="toolButtonStyle">
-   <enum>Qt::ToolButtonIconOnly</enum>
-  </property>
-  <property name="documentMode">
-   <bool>false</bool>
-  </property>
-  <property name="tabShape">
-   <enum>QTabWidget::Triangular</enum>
-  </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
-     <widget class="QTableWidget" name="Lista_pracownicy">
-      <column>
-       <property name="text">
-        <string>id</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Nazwisko</string>
-       </property>
-      </column>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QPushButton" name="button_refresh">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="Button_Refresh">
       <property name="text">
        <string>Odśwież</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="1" alignment="Qt::AlignHCenter">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>Ciągniki</string>
+    <item row="1" column="0" colspan="4">
+     <widget class="QTableWidget" name="tableWidget_Main"/>
+    </item>
+    <item row="0" column="1">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
       </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="QTableWidget" name="lista_naczepy">
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Nr. Rej</string>
-       </property>
-      </column>
-     </widget>
-    </item>
-    <item row="0" column="2" alignment="Qt::AlignHCenter">
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>Naczepy</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0" colspan="3">
-     <widget class="QTableWidget" name="Ogolne">
-      <property name="maximumSize">
+      <property name="sizeHint" stdset="0">
        <size>
-        <width>16777215</width>
-        <height>187</height>
+        <width>40</width>
+        <height>20</height>
        </size>
       </property>
-     </widget>
+     </spacer>
     </item>
-    <item row="3" column="2">
-     <widget class="QPushButton" name="ok">
-      <property name="text">
-       <string>Zatwierdź zmiany</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QTableWidget" name="lista_ciagniki">
-      <column>
+    <item row="0" column="3">
+     <widget class="QComboBox" name="comboBox_Sort">
+      <item>
        <property name="text">
-        <string>id</string>
+        <string>Nazwisko</string>
        </property>
-      </column>
-      <column>
+      </item>
+      <item>
        <property name="text">
-        <string>Nr. Rej</string>
+        <string>Numer rej. Ciągninka</string>
        </property>
-      </column>
+      </item>
+      <item>
+       <property name="text">
+        <string>Numer rej. Naczepy</string>
+       </property>
+      </item>
      </widget>
     </item>
-    <item row="0" column="0" alignment="Qt::AlignHCenter">
+    <item row="0" column="2">
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>Pracownicy</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QPushButton" name="usun">
-      <property name="text">
-       <string>Usuń wybrane</string>
+       <string>Sortuj według:</string>
       </property>
      </widget>
     </item>
    </layout>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>864</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuOpcje">
-    <property name="title">
-     <string>opcje</string>
-    </property>
-    <widget class="QMenu" name="menuDodaj">
-     <property name="title">
-      <string>Dodaj</string>
-     </property>
-     <addaction name="actionPracownika"/>
-     <addaction name="actionCiagnik"/>
-     <addaction name="actionNaczepy"/>
-    </widget>
-    <addaction name="menuDodaj"/>
-   </widget>
-   <addaction name="menuOpcje"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -163,19 +75,33 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionPracownika">
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1680</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionUstawiania"/>
+    <addaction name="separator"/>
+    <addaction name="actionDodaj"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <action name="actionUstawiania">
    <property name="text">
-    <string>Pracownika</string>
+    <string>Ustawiania</string>
    </property>
   </action>
-  <action name="actionCiagnik">
+  <action name="actionDodaj">
    <property name="text">
-    <string>Ciągnik</string>
-   </property>
-  </action>
-  <action name="actionNaczepy">
-   <property name="text">
-    <string>Naczepy</string>
+    <string>Dodaj</string>
    </property>
   </action>
  </widget>

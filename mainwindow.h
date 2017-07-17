@@ -1,10 +1,21 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include "dialog.h"
-#include "dodajnaczepe.h"
-#include "dodajciagnik.h"
-#include <QMainWindow>
+
 #include <iostream>
+#include <QMainWindow>
+#include <QtSql/QSql>
+#include <QtSql/QSqlDatabase>
+#include <QtSql/QSqlError>
+#include <QtSql/QSqlDriver>
+#include <QtSql/QSqlQuery>
+#include <QtSql/QSqlRecord>
+#include <QDebug>
+#include <QMessageBox>
+#include "preferences.h"
+#include "addkierowca.h"
+#include "addciagnik.h"
+#include "addnaczepa.h"
+
 
 namespace Ui {
 class MainWindow;
@@ -17,43 +28,33 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    Dialog *oknoPracownika;
-    DodajNaczepe *dodajNaczepe;
-    dodajciagnik *dodajCiagnik;
+    Preferences *PreferencesWindow;
+    AddKierowca *addKierowcaWindow;
+    AddCiagnik *addCiagnikWindow;
+    AddNaczepa *AddNaczepaWindow;
 
-
-private slots:
-
-    void on_Lista_pracownicy_cellClicked(int row, int column);
-
-    void on_lista_ciagniki_cellClicked(int row, int column);
-
-    void on_lista_naczepy_cellClicked(int row, int column);
-
-    void showOknoPracownik();
-
-    void showDodajNaczepe();
-
-    void showDodajCiagnik();
-
-    void edytowaniePracownicy();
-    void edytowanieNaczepy();
-    void edytowanieCiagniki();
-
-    void usuwaniePracownika();
-    void usuwanieCiagnika();
-    void usuwanieNaczepy();
-
-    void on_button_refresh_clicked();
-
-    void on_ok_clicked();
-
-    void on_usun_clicked();
 
 private:
     Ui::MainWindow *ui;
-    bool Connecting();
     void Refreshing();
+    QString CreateTableKierowca();
+    QString CreateTableCiagnik();
+    QString CreateTableNaczepa();
+    QString ConnectDatabase();              // Connecting to Database
+    void MessageDatabase(QString);          // and showing result in the MessageBox
+    void NameHeaders(QSqlQuery);            // Seting QTableWidget headers names from Sql headers
+    void FillTable(QSqlQuery);              // Function that prepare and fill QTableWighet for Sql data
+    QSqlQuery PrepareQuery();               // Funkction that prepare QSqlQuery for other funkcions
+
+    void showAddKierowcaWindow();
+    void showAddCiagnikWindow();
+    void showAddNaczepaWindow();
+
+public slots:
+    void Add();
+    void showPreferencesWindow();
+private slots:
+    void on_Button_Refresh_clicked();
 };
 
 #endif // MAINWINDOW_H
